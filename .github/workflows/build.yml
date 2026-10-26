@@ -10,7 +10,7 @@ jobs:
         run: |
           mkdir project
           cat > p.b64 <<'END'
-          /Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4Mf/ELtdABcLvBx9AZXAHUo+eRXCzCajYxZi5LcH9A3f1bfkwMUw7qbpAuGczqRwhxDE
+          /Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4Mf/EL5dABcLvBx9AZXAHUo+eRXCzCajYxZi5LcH9A3f1bfkwMUw7qbpAuGczqRwhxDE
           fb2U3vr9wjxBAn2aM7hz3WweOEVRjejgz7Z5979Nibf2vvwK8ply24k5tpgLndB9eePY+IAfLgYCZVfj/3/3kPaqTXxmwwN+9QW0
           kzKQi8SmS+daaMuegf+PHnf2YEKIzgYHrP+Z8P2ChlcG3CZF/NHfByBtwc1tE61XJ0uGv/aJ4LqeqQeiR+v9Uq9WGykLLRFXYzxf
           ForlnUSMumtS7HO9WLjv2OIN9oSFVGnTWja+kzbjnyUwqgxmcchDH4o3/vxGtTpmr737qObWGVEpJnfA0mvLWhR/7R+gGL5wWf3R
@@ -62,15 +62,16 @@ jobs:
           EtuUzj8WcghQXq7qGpbd+5hLZCaZWZlZWWdbjNkbQi4gyM3FrKy/vcByhbtWnk0ZDK7roeBEtNQlIuxdGtEn0J1hc9boEVvDXPbP
           012+Q3gAkItZN5ctD+/ylDTLN9efITTCx4yIQV40wE9DW5VxxQIuXE2bwaOMjaUsvN52+kQR0Sw1fPLCzz2FunayVvaxiMOTlA3m
           8oDFI6RNzk4BzaZw/8yUBea9PILfQjMo0bv3gmCrYfbCiDqZk1h8gCADTXWnyJ0nR1kfbpUilqLm2DK02pVht0zR/QOnMeRGUUn/
-          9fn7dCvehB815wumsB04wTq1pzmd5rlF7BRfHlwSlDMu8tbwJtwbCBkPa1KkM5rhmT4nLB1lqOiEkWBbaorTmCJQYOmUKH0b5YNh
-          dCDsgwtfYzywXHkrXtjv9eL/sZLLMdhIscYW6xz6Zewj4m2sMN2ALelKj8N+JQkKd7JFnb3DhCBRmlsChyN2LEzOc2Uxw4pjZ7xY
-          IVB/bSoC0WeO5pLhPJLwhH9jv9EOmxY5drz3x+ebugxmBQJwVyKXboydPn6ckUpGI+LtAZAXmhlhH4JdPqCQKVSJ8gFuxOWOZSVf
-          GmjyAYicC0fIIIGkQAgVmjLUz4v0EGEgwha4SfV8p+CmS93aECnkzMyUuNX5r52m9ke7uh6oPbCZohc2zwY9Xu4Nnd35KZ3dAh7y
-          HHD1DOxd/oXOHvlX7A/4yvbm7zScXY64+iFDiuNNHSj+6uYpILrypJu0cPaeyuBQvu8IGgh0tr1TRKSamTF+vLkGfDsqtnKq56S3
-          u95f98yDpsJKE0rr4/JDnrtSHpFjzgTIz2413rDYDS8iRTGDpZfAAADk9yzutpYzdwAB1yGAkAMA9qOoC7HEZ/sCAAAAAARZWg==
+          9fn7dCvehB815wumsB04wTq1pzmd5rlF7BRfHlwSlDMu8tbwJtwbCBkPa1JvSipsgnkX0b14ZjG6UvSLT9PF1FZbfFuo2erBItNi
+          LRcXGXI61im2fWeFEeGz5CBEGdo/8yC4kh3Gko2ki4jaYGMuvIxYFkm4HnpRXa9zy2WajQPA/t0Sl04FpOi2FIB4toVRTDHNNNL8
+          dwPE5iWm90ySc30Asz1UDxmpjr/LXvC15XZy5pRnSKgbmRQsDm2Jyocx1ZCzIcviywY/eMIP2m3qskYXPacbOp8ErJR/zTsLypVq
+          d1cumhhareIeCjTfY3iF98Ph5v/UzrnNpkiPOmX1xY6VIKoL6//JnZGMKhJPlnOLvi/pBiixl/2L+g1vA+xQjopiqmtlt3Zsrx9k
+          I0ra/x1mYeSMZDArxi/+ZrNNl46iEQWQH4V9w33t3x4GDDBbIc24xAvCEW2L5NEuRAXlEP8UqjW0zm7ZBiT51dpFyVKDAhWaTLLE
+          XkOlliHpZwRbMvlPM5m1l7HoqL/CLhoyTmKBm7QSVo7+6jhgBD3QXx/YAAAAiv4m69gJGwIAAdohgJADACiwNrexxGf7AgAAAAAE
+          WVo=
           END
           base64 -d p.b64 > p.txz
-          echo "cc0e3d3673b63894fc338c2fdd4ae3dc6a8cadc1f665ba9405831fbb1b44c76f  p.txz" | sha256sum -c
+          echo "0aadb969d231b50c003c777251b0ee73fef151e6c03e3d541875dbb58ef39c2a  p.txz" | sha256sum -c
           tar xJf p.txz -C project
       - uses: actions/setup-java@v4
         with:
